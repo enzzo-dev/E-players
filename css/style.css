@@ -45,20 +45,15 @@ img{
 
 .content{
     max-width: 75em; /*75em = 1173px*/
-    width: 80%;
+    width: 86%;
     height: 100%;
     margin: 0 auto;
+
 }
 
 .topo img{
-    max-width: 21.18em; /*21.18em = 339px*/
-    height: 35px;
-}
-
-.menu{
-    max-width: 10em;
-    width: 80%;
-    margin: 0 auto;
+    max-width: 20.18em; /*21.18em = 339px*/
+    height: 33px;
 }
 
 .menu ul{
@@ -69,21 +64,72 @@ img{
 
 .menu a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(139, 139, 139);
     text-transform: uppercase;
-    font-size: 1.1em;
-    padding: 1.4em 1em;
+    font-size: 16px;
+    padding: 1.8em 15px;
 }
 
 .menu a:hover{
-    background-color: var(--red);
+    color: white;
+    transition: 0.5s ease;
+    background-color: #C20000;
 }
 
 #menu-bars{
     display: none;
 }
 
-/*Responsividade*/
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    height: 570px;
+}
+
+.banner-position{
+    width: 40%;
+    height: 600px;
+    position: absolute;
+    top: 22%;
+    left: 61%;
+}
+
+.banner-text{
+    width: 100%;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-text h1{
+    padding-left: 100px;
+    font-size: 56px;
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+
+.banner-text p{
+    text-align: left;
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.banner-text a{
+    width: 220px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-size: 30px;
+    padding: 0.5em 1em;
+    margin-left: 170px;
+    border-radius: 15px;
+}
+
+/*DESIGN RESPONSIVO*/
 
 @media screen and (max-width: 74.93em){
     
