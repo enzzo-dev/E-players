@@ -2,48 +2,39 @@
 /*Configurações básicas*/
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
-
 :root{
     --background: #000000;
     --red: #C20000;
     --gradient: inear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
     --font: 'Titallium Web' , sans-serif;
 }
-
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-
 html, body{
     height: 100%;
 }
-
 body{
     font-family: var(--font);
     background-color: rgb(19, 18, 18);
 }
-
 img{
     width:100%;
 }
-
 .flex-center-bt{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 /*Configurações básicas*/
-
 .topo{
     width: 100%;
     height: 5em; /* 1em = 16px || 5em = 80px */
     background-color: #000000;
 }
-
 .content{
     max-width: 75em; /*75em = 1173px*/
     width: 86%;
@@ -51,18 +42,15 @@ img{
     margin: 0 auto;
 
 }
-
 .topo img{
     max-width: 20.18em; /*21.18em = 339px*/
     height: 33px;
 }
-
 .menu ul{
     display: flex;
     list-style: none;
     margin-top: 10px;
 }
-
 .menu a{
     text-decoration: none;
     color: white;
@@ -70,24 +58,19 @@ img{
     font-size: 16px;
     padding: 1.6em 15px;
 }
-
 .menu a:hover{
     transition: .3s;
     border-bottom: 3px solid white;
 }
-
 #menu-bars{
     display: none;
 }
-
 .banner{
     width: 100%;
 }
-
 .banner img{
     height: 570px;
 }
-
 .banner-position{
     width: 40%;
     height: 600px;
@@ -95,7 +78,6 @@ img{
     top: 22%;
     left: 61%;
 }
-
 .banner-text{
     width: 100%;
     height: 400px;
@@ -103,45 +85,86 @@ img{
     display: flex;
     flex-direction: column;
 }
-
 .banner-text h1{
     padding-left: 100px;
     font-size: 56px;
     font-family: var(--font);
     letter-spacing: 2px;
 }
-
 .banner-text p{
     text-align: left;
     font-size: 34px;
     margin-top: 20px;
     margin-bottom: 40px;
 }
-
 .banner-text a{
     width: 220px;
     text-decoration: none;
     color: white;
     background-color: red;
-    font-size: 30px;
+    font-size: 23px;
     padding: 0.5em 1em;
     margin-left: 170px;
     border-radius: 15px;
+    text-transform: uppercase;
 }
-
 .jogos{
     background-color: #000000;
     width: 100%;
     height: 90px;
     display: flex;
-    border-bottom: 2px solid var(--red);
-    border-top: 2px solid var(--red);
+}
+.jogos img{
+    width: 230px;
+    height: 60px; /*mudar para em*/
+    margin: 10px 100px;
+}
+.about{
+    width: 100%;
+    height: 29.25em;
+    background-color: rgb(32, 32, 202);
+    display: flex;
+}
+.about-angulation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.angulation{
+    width: 100%;
+    height: 20em;
+    background-color: #000000;
+    transform: skewY(-3deg);
+}
+.about-position{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 93%;
+    display: flex;
 }
 
-.jogos img{
-    width: 260px;
-    height: 60px;
-    margin: 10px 100px;
+.about-position img{
+    width: 380px;
+    height: 500px;
+    position: absolute;
+    top: -72%;
+    left: 70%;
+}
+
+.about-text{
+    width: 50%;
+    color: white;
+}
+.about-text h2{
+    font-size: 2em;
+}
+.about-text p{
+    font-size: 18px;
+    padding-top: 40px;
 }
 
 /*DESIGN RESPONSIVO*/
